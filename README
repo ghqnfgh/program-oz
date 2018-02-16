@@ -3,4 +3,35 @@
 $gcc -o libperf.o -c libperf.c
 $gcc -o PROGRAM_NAME main.c libperf.o -lpthread
 
+* how to compile
+
 #./PROGRAM_NAME &
+
+
+
+
+input : all the program after program-oz is run
+
+output : file that is logged with performance checking. it is named with number
+   example) 735
+
+
+each number in file means like under
+
+0 : CPU_CLOCK
+1 : TASK_CLOCK
+2 : CONTEXT_SWITCHES
+3 : CPU_MIGRATIONS
+4 : PAGE_FAULTS
+5 : PAGE_FAULTS_MIN
+6 : PAGE_FAULTS_MAJ
+7 : CPU_CYCLES
+8 : INSTRUCTIONS
+9 : CACHE_REFERENCES
+10 : CACHE MISSES
+11 : BRANCH_INSTRUCTIONS
+12 : BRANCH_MISSES
+13 : BUS_CYCLES
+
+14 : walltime ( total time )
+
