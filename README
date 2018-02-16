@@ -1,0 +1,6 @@
+* how to compile
+
+$gcc -o libperf.o -c libperf.c
+$gcc -o PROGRAM_NAME main.c libperf.o -lpthread
+
+#./PROGRAM_NAME &
